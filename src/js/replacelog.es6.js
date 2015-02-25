@@ -1,4 +1,5 @@
-var replacelog = (el) => {
+var PRE = 'dl-';
+export function replacelog(el) {
   var _log = console.log;
   console.log = (...args) => {
     _log.apply(console, args);
@@ -16,7 +17,7 @@ var replacelog = (el) => {
   }
 };
 
-var replacewarn = (el) => {
+export function replacewarn(el) {
   var _warn = console.warn;
   console.warn = (...args) => {
     _warn.apply(console, args);
@@ -39,7 +40,7 @@ var replacewarn = (el) => {
   }
 };
 
-var replaceerror = (el) => {
+export function replaceerror(el) {
   var _error = console.error;
   console.error = (...args) => {
     _error.apply(console, args);

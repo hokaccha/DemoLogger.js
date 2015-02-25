@@ -1,4 +1,7 @@
-class Log extends Elem {
+import { replacelog, replacewarn, replaceerror } from './replacelog';
+import Elem from './Elem';
+
+export default class Log extends Elem {
   constructor(opt = {}) {
     opt.el = 'log';
     opt.style = {

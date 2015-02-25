@@ -1,4 +1,10 @@
-class DemoLogger {
+import Elem from './Elem';
+import Frame from './Frame';
+import Logger from './Logger';
+import Func from './Func';
+import Btn from './Btn';
+
+export default class DemoLogger {
   constructor(config = {}, opt = {}) {
     this.config = config;
     this.opt = opt;
@@ -36,5 +42,3 @@ class DemoLogger {
     }
   }
 }
-
-window.DemoLogger = DemoLogger;
